@@ -38,4 +38,10 @@ o	Python
 
 o	Rasa X
 
+# Telegram Integration:
+◦	Download ngrok from https://ngrok.com/download
+◦	After extracting the zip file, open the ngrok file and run it.
+◦	In ngrok, enter the command ‘ngrok http 5005’
+
+
  
