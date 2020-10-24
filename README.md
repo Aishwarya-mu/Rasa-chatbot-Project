@@ -43,5 +43,27 @@ o	Rasa X
 ◦	After extracting the zip file, open the ngrok file and run it.
 ◦	In ngrok, enter the command ‘ngrok http 5005’
 
+•	Then go to telegram and create your own bot using Botfather:
+a)	Open the telegram app and search for botfather(it is an inbuilt bot used to create other bots)
+b)	Start a conversation with botfather and enter /newbot to create a newbot.
+c)	Give a name to your bot
+d)	Give a username to your bot, which must end in _bot.This generates an access token.
+
+•	Open ‘credentials.yml’ and enter:
+telegram:
+access_token: "obtained from telegram"
+verify: "your bot username"
+webhook_url: "https://<ngrokurl>/webhooks/telegram/webhook"
+
+•	Go to terminal and enter the command ‘rasa run’
+•	Open one more terminal and run the command ‘rasa run actions’
+•	Now, you can chat with your bot from Telegram.
+
+# You can find the bot we created on Telegram as "covid_rasa_bot".
+
+References:
+1.	Rasa Official documentation https://rasa.com/docs/rasa/user-guide/installation/
+2.	CDC Corona FAQ. 
+
 
  
